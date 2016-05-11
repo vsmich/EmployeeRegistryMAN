@@ -53,7 +53,7 @@ namespace EmployeesRegister.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Salary,Position,Department")] Employee employee)
+        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Salary,Position,Department, Company")] Employee employee)
         {
             if (ModelState.IsValid)
             {
